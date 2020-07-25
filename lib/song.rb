@@ -30,6 +30,6 @@ class Song
     count[genre] ||= 0
     count[genre] += 1
     end
+    genre_count
   end 
-  genre_count
 end
