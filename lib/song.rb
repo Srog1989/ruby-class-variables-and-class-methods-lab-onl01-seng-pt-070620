@@ -25,12 +25,10 @@ class Song
   end
   
  def genre_count
-  count=[]
+  count={}
   @@genres.each do |genre|
-    if count[genre]
-      count[genre] += 1
-    else count[genre] = 1
+    count[genre] ||= 0
+    count[genre] ||= +1
     end
-  end
   end 
 end
